@@ -21,6 +21,8 @@ public class BlogController {
 private BlogDAO blogDAO;
 
 
+
+
 @PostMapping(value="/createblog")
 public ResponseEntity<Blog> addblog(@RequestBody Blog blog){
 	System.out.println("hello");

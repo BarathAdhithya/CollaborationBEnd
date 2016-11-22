@@ -17,9 +17,10 @@ public class UsersDAOImpl implements UsersDAO {
 
 	@Autowired
 	private SessionFactory sessionFactory;
-	public UsersDAOImpl(SessionFactory sessionFactory) {
+	public UsersDAOImpl(SessionFactory sessionFactory){
 		this.sessionFactory=sessionFactory;
 	}
+	
 	@Transactional
 	public boolean saveOrUpdate(Users users) {
 		try {

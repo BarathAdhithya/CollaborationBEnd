@@ -13,6 +13,7 @@ import com.niit.collab.model.Blog;
 
 @Repository(value="blogDAO")
 public class BlogDAOImpl implements BlogDAO {
+
 	
 	@Autowired
 	private SessionFactory sessionFactory;
