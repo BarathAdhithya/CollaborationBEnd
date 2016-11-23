@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.niit.collab.model.Blog;
 
-@Repository(value="blogDAO")
+@Repository
 public class BlogDAOImpl implements BlogDAO {
 
 	

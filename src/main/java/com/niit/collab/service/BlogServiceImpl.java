@@ -1,4 +1,4 @@
-package com.niit.collab.service;
+/*package com.niit.collab.service;
 
 import java.util.List;
 
@@ -15,14 +15,14 @@ public class BlogServiceImpl implements BlogService{
 	@Autowired
 	private BlogDAO blogDAO;
 	
-	/*Create New Blog Service*/
+	Create New Blog Service
 	public void createBlog(Blog blog,HttpSession session) 
 	{	
-		/*Saving userid from session and time to blog object*/
+		Saving userid from session and time to blog object
 		//blog.setB_userid((int)session.getAttribute("userid"));
 		//blog.setBlogtime(new java.util.Date().toString());
 		
-		/*Saving blog in database*/
+		Saving blog in database
 		blogDAO.saveOrUpdate(blog);	
 	}
 
@@ -46,23 +46,23 @@ public class BlogServiceImpl implements BlogService{
 		return null;
 	}
 
-	/*Retrive All Blog List and convert to JSON and saving in String */
-	/*public String  getAllBlogs() 
+	Retrive All Blog List and convert to JSON and saving in String 
+	public String  getAllBlogs() 
 	{
 		List<Blog> list=blogDAO.getBlogs();
 		Gson gson=new Gson();
 		String data=gson.toJson(list);
 		return data;
-	}*/
+	}
 
-	/*Delete single blog based on blog id
+	Delete single blog based on blog id
 	public void deleteBlog(int blogid) 
 	{
 		//Blog blog= blogDAO.getBlog(blogid);
 		blogDAO.deleteBlog(blog);
 	}
-*/
-	/*Edit individual blog based on blog id
+
+	Edit individual blog based on blog id
 	public Blog editBlog(int blogid)
 	{
 		 return blogDAO.getBlog(blogid);
@@ -72,5 +72,6 @@ public class BlogServiceImpl implements BlogService{
 	public List<Blog> getSingleBlog(int blogid) 
 	{
 		return blogDAO.getIndividualForum(blogid);
-	}*/
+	}
 }
+*/
